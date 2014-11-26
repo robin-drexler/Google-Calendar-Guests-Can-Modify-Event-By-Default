@@ -1,22 +1,18 @@
 {
-    "name": "My awesome extension :)",
+    "name": "Google Calendar Guests Can Modify Event By Default",
     "version": "0.1",
-    "icons": { 
+    "icons": {
         "16": "/img/icons/icon_16.png",
         "48": "/img/icons/icon_48.png",
-        "128": "/img/icons/icon_128.png" 
+        "128": "/img/icons/icon_128.png"
     },
 
-    "description": "Yay, I'm so useless.",
-    "permissions": [
-        "geolocation"
-    ],
+    "description": "Enables modify event setting for google calendar by default.",
 
     "content_scripts": [
         {
-            "matches": ["<all_urls>"],
+            "matches": ["https://www.google.com/calendar/render/*"],
             "js": [
-                    "/js/external/jquery.js", 
                     "/js/content_script.js"
                 ]
         }
