@@ -5,7 +5,7 @@
         "256": "/img/icons/icon_256.png"
     },
 
-    "description": "Enables modify event setting for google calendar by default.",
+    "description": "Enables modify event setting for google calendar by default, when creating a new event.",
 
     "content_scripts": [
         {
