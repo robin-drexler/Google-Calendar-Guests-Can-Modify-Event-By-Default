@@ -2,9 +2,7 @@
     "name": "Google Calendar Guests Can Modify Event By Default",
     "version": "0.1",
     "icons": {
-        "16": "/img/icons/icon_16.png",
-        "48": "/img/icons/icon_48.png",
-        "128": "/img/icons/icon_128.png"
+        "256": "/img/icons/icon_256.png"
     },
 
     "description": "Enables modify event setting for google calendar by default.",
