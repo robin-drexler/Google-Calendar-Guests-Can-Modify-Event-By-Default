@@ -1,6 +1,6 @@
 {
     "name": "Google Calendar Guests Modify Event Default",
-    "version": "0.2",
+    "version": "0.3",
     "icons": {
         "256": "/img/icons/icon_256.png"
     },
@@ -9,7 +9,10 @@
 
     "content_scripts": [
         {
-            "matches": ["https://www.google.com/calendar/*"],
+            "matches": [
+              "https://calendar.google.com/*",
+              "https://www.google.com/calendar/*"
+            ],
             "js": [
                     "/js/content_script.js"
                 ]
