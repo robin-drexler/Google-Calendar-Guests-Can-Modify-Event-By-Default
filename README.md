@@ -8,6 +8,6 @@ Browser extensions that enable 'Guests can modify event' setting for Google Cale
 
 ## Installation
 
-- [Safari]()
-- Chrome
-- Firefox
+- [Safari](https://github.com/BranchMetrics/auto-guests-modify-event/blob/master/dist/auto_guests_modify_event-0.1.safariextz?raw=true)
+- [Chrome](https://chrome.google.com/webstore/detail/lgfabaphdjbljbodklbkiekmnpcobcep/)
+- [Firefox](https://github.com/BranchMetrics/auto-guests-modify-event/blob/master/dist/auto_guests_modify_event-0.1.xpi?raw=true)
