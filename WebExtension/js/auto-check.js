@@ -1,6 +1,6 @@
 (function() {
 
-  function onLoad() {
+  function checkBox() {
     // checkbox id is something like :31guests-modify
     // the number does actually change
     // it's not even a valid selector ¯\_(ツ)_/¯
@@ -12,7 +12,7 @@
     });
 
     if (modifyEventCheckbox && !modifyEventCheckbox.checked) {
-      // activate the checkbox by mimicing click
+      // activate the checkbox by mimicking click
       // needed so the checkbox stays checked, after switching tabs to e.g. to "find a time"
       modifyEventCheckbox.dispatchEvent(clickEvent)
     }
@@ -21,7 +21,7 @@
   window.addEventListener('hashchange', function() {
     // delay execution, because DOM might not be ready immediately
     // after event was fired
-    window.setTimeout(onLoad, 250);
+    window.setTimeout(checkBox, 500);
   });
-  onLoad();
+  checkBox();
 })();
