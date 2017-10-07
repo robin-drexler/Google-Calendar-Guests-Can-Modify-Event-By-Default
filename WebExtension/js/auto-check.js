@@ -1,27 +1,20 @@
-(function() {
+function checkBox() {
+  // checkbox id is something like :31guests-modify
+  // the number does actually change
+  // it's not even a valid selector ¯\_(ツ)_/¯
+  var modifyEventCheckbox = document.querySelector('input[id$=guests-modify]');
 
-  function checkBox() {
-    // checkbox id is something like :31guests-modify
-    // the number does actually change
-    // it's not even a valid selector ¯\_(ツ)_/¯
-    var modifyEventCheckbox = document.querySelector('input[id$=guests-modify]');
-    var clickEvent = new MouseEvent("click", {
-      bubbles: true,
-      cancelable: true,
-      view: window
-    });
-
-    if (modifyEventCheckbox && !modifyEventCheckbox.checked) {
-      // activate the checkbox by mimicking click
-      // needed so the checkbox stays checked, after switching tabs to e.g. to "find a time"
-      modifyEventCheckbox.dispatchEvent(clickEvent)
-    }
+  if (modifyEventCheckbox) {
+    modifyEventCheckbox.checked = true;
   }
+}
 
-  window.addEventListener('hashchange', function() {
-    // delay execution, because DOM might not be ready immediately
-    // after event was fired
-    window.setTimeout(checkBox, 500);
-  });
+// This fires when the Create Event modal opens
+window.addEventListener('hashchange', function() {
   checkBox();
-})();
+  // retry after delay, in case DOM was slow to render
+  window.setTimeout(checkBox(), 500);
+});
+
+// Attempt on initial load, in case Create Event modal was already open
+checkBox();

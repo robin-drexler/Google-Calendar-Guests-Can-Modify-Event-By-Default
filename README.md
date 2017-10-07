@@ -4,10 +4,9 @@ Browser extensions that enable 'Guests can modify event' setting for Google Cale
 
 - WebExtension (Chrome/Firefox) version forked from [Robin Drexler's Chrome Extension](https://github.com/robin-drexler/Google-Calendar-Guests-Can-Modify-Event-By-Default).
 - Safari extension adapted from WebExtension version.
-- Icon from Font Awesome by Dave Gandy - [http://fontawesome.io](http://fontawesome.io)
 
 ## Installation
 
-- [Safari](https://github.com/BranchMetrics/auto-guests-modify-event/blob/master/dist/auto_guests_modify_event-0.1.safariextz?raw=true)
-- [Chrome](https://chrome.google.com/webstore/detail/lgfabaphdjbljbodklbkiekmnpcobcep/)
-- [Firefox](https://github.com/BranchMetrics/auto-guests-modify-event/blob/master/dist/auto_guests_modify_event-0.1.xpi?raw=true)
+- [Safari](https://github.com/BranchMetrics/auto-guests-modify-event/blob/master/dist/auto_guests_modify_event-0.2.safariextz?raw=true)
+- [Chrome](https://chrome.google.com/webstore/detail/auto-guests-modify-event/lgfabaphdjbljbodklbkiekmnpcobcep)
+- [Firefox](https://addons.mozilla.org/en-US/firefox/addon/auto-guests-modify-event/)

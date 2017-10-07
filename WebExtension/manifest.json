@@ -1,7 +1,7 @@
 {
   "name": "Auto Guests Modify Event",
   "description": "Enables 'Guests can modify event' setting for Google Calendar by default.",
-  "version": "0.1",
+  "version": "0.2",
   "manifest_version": 2,
   "update_url": "https://clients2.google.com/service/update2/crx",
   "icons": {
