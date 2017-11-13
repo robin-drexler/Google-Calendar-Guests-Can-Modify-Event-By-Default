@@ -1,10 +1,20 @@
 (function() {
 
-  function onLoad() {
+  function getModifyEventCheckbox() {
     // checkbox id is something like :31guests-modify
     // the number does actually change
     // it's not even a valid selector ¯\_(ツ)_/¯
     var modifyEventCheckbox = document.querySelector('input[id$=guests-modify]');
+
+    // Support Google calendar redesign
+    if (!modifyEventCheckbox) {
+      modifyEventCheckbox = document.querySelector('div[aria-label="Let guests modify the event"]');
+    }
+    return modifyEventCheckbox;
+  }
+
+  function checkModifyEventCheckbox() {
+    var modifyEventCheckbox = getModifyEventCheckbox();
     var clickEvent = new MouseEvent("click", {
       bubbles: true,
       cancelable: true,
@@ -21,7 +31,10 @@
   window.addEventListener('hashchange', function() {
     // delay execution, because DOM might not be ready immediately
     // after event was fired
-    window.setTimeout(onLoad, 250);
+    window.setTimeout(checkModifyEventCheckbox, 250);
   });
-  onLoad();
+  checkModifyEventCheckbox();
+
+  // New design loads a bit slower
+  window.setTimeout(checkModifyEventCheckbox, 750);
 })();
