@@ -1,5 +1,12 @@
-# Google-Calendar-Guests-Can-Modify-Event-By-Default
+# Auto Guests Modify Event
 
-Chrome extension that enables 'Guests can modify event' setting for google calendar by default, when creating a new event.
+Browser extensions that enable 'Guests can modify event' setting for Google Calendar by default.
 
-You can install it from [the Chrome Webstore](https://chrome.google.com/webstore/detail/google-calendar-guests-mo/hjhicmeghjagaicbkmhmbbnibhbkcfdb).
+- WebExtension (Chrome/Firefox) version forked from [Robin Drexler's Chrome Extension](https://github.com/robin-drexler/Google-Calendar-Guests-Can-Modify-Event-By-Default).
+- Safari extension adapted from WebExtension version.
+
+## Installation
+
+- [Safari](https://github.com/BranchMetrics/auto-guests-modify-event/raw/master/dist/auto_guests_modify_event-0.3.safariextz)
+- [Chrome](https://chrome.google.com/webstore/detail/auto-guests-modify-event/lgfabaphdjbljbodklbkiekmnpcobcep)
+- [Firefox](https://addons.mozilla.org/en-US/firefox/addon/auto-guests-modify-event/)

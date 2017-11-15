@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Author</key>
+	<string>Branch</string>
+	<key>Builder Version</key>
+	<string>13604.1.38.1.6</string>
+	<key>CFBundleDisplayName</key>
+	<string>Auto Guests Modify Event</string>
+	<key>CFBundleIdentifier</key>
+	<string>io.branch.autoguestsmodifyevents</string>
+	<key>CFBundleInfoDictionaryVersion</key>
+	<string>6.0</string>
+	<key>CFBundleShortVersionString</key>
+	<string>0.3</string>
+	<key>CFBundleVersion</key>
+	<string>1</string>
+	<key>Content</key>
+	<dict>
+		<key>Scripts</key>
+		<dict>
+			<key>End</key>
+			<array>
+				<string>auto-check.js</string>
+			</array>
+		</dict>
+	</dict>
+	<key>Description</key>
+	<string>Enables 'Guests can modify event' setting for Google Calendar by default.</string>
+	<key>DeveloperIdentifier</key>
+	<string>R63EM248DP</string>
+	<key>ExtensionInfoDictionaryVersion</key>
+	<string>1.0</string>
+	<key>Permissions</key>
+	<dict>
+		<key>Website Access</key>
+		<dict>
+			<key>Allowed Domains</key>
+			<array>
+				<string>calendar.google.com</string>
+				<string>www.google.com/calendar</string>
+			</array>
+			<key>Include Secure Pages</key>
+			<true/>
+			<key>Level</key>
+			<string>Some</string>
+		</dict>
+	</dict>
+	<key>Website</key>
+	<string>https://branch.io</string>
+</dict>
+</plist>
